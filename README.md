@@ -61,6 +61,8 @@ Modify your code to make the diamonds side-by-side. Example:
 
 <img src="https://s3.amazonaws.com/upperline/curriculum-assets/patterns-model.jpg" width="150" style="float:left; margin-right:15px">
 
+
+
 ```
     *       *       *
    ***     ***     ***
