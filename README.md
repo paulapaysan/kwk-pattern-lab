@@ -59,7 +59,7 @@ Modify your code to prompt the user for the number of diamonds they want. Using 
 ### Part IV: Side-by-Side
 Modify your code to make the diamonds side-by-side. Example:
 
-<img src="https://s3.amazonaws.com/upperline/curriculum-assets/patterns-model.jpg" width="150" style="float:left; margin-right:15px">
+<img src="https://s3.amazonaws.com/upperline/curriculum-assets/patterns-model.jpg" width="150" align="left" style="margin-right:15px">
 
 
 
@@ -77,11 +77,13 @@ Modify your code to make the diamonds side-by-side. Example:
 
 ### Part V: Rainbow Magic
 
-<img src="https://s3.amazonaws.com/upperline/curriculum-assets/patterns-colored-skirt.jpg" width="200" style="float:right; margin-right:15px">
+<img src="https://s3.amazonaws.com/upperline/curriculum-assets/patterns-colored-skirt.jpg" width="200" align="right" style="margin-right:15px">
 
 Find a ruby gem that allows you to give your diamonds color. Print out a diamond that covers the colors of the rainbow.
 
 *Inspiration for this lab comes from one of the labs in Harvard's CS50 class (Intro to Computer Science)
+
+
 
 
 ### Optional Practice with Git!
