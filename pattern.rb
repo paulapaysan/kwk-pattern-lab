@@ -3,20 +3,20 @@ require 'lolize/auto'                                                           
 
 ### Part I: The Diamond
 puts "............Part I: The Diamond............"
-sp = 4                                                                          #spaces count
-ast = 1                                                                         #asteriks count
-while ast <= 9                                                                  #top half of the diamond
-    puts (' ' * sp)+('*' * ast)
-    sp -= 1                                                                     #removes spaces by one for each row
-    ast +=2                                                                     #adds asteriks to create diamond
+spaces = 4                                                                      #spaces count
+asteriks = 1                                                                    #asteriks count
+while asteriks <= 9                                                             #top half of the diamond
+    puts (' ' * spaces)+('*' * asteriks)
+    spaces -= 1                                                                 #removes spaces by one for each row
+    asteriks +=2                                                                #adds asteriks to create diamond
 end
 
-ast = 7                                                                         #resets count
-sp = 1
-while ast > 0                                                                   #bottom half of the diamond
-    puts (' ' * sp)+('*' * ast)
-    sp += 1
-    ast -=2
+asteriks = 7                                                                    #resets count
+spaces = 1
+while asteriks > 0                                                              #bottom half of the diamond
+    puts (' ' * spaces)+('*' * asteriks)
+    spaces += 1
+    asteriks -=2
 end
 
 
@@ -36,26 +36,26 @@ while height%2 == 0 || height > 25                                              
     height = gets.chomp.to_i
 end
 
-sp = (height-1)/2                                                               #spaces variable            
-ast = 1                                                                         #asteriks variable
-row = 0                                                                         #row count
+spaces = (height-1)/2                                                                       
+asteriks = 1                                                                    
+row = 0                                                                         
 if (height<=23)
-    while row <= height/2                                                       #top half of the diamond
+    while row <= height/2                                                       
         row += 1
-        puts (" " * sp)+("*" * ast)+(" " * sp)
-        sp -= 1
-        ast +=2
+        puts (" " * spaces)+("*" * asteriks)+(" " * spaces)
+        spaces -= 1
+        asteriks +=2
     end
 else                                
 end
 
-ast -= 4
-sp = 1
-while (row > height/2) && (row < height)                                        #bottom half of the diamond
+asteriks -= 4
+spaces = 1
+while (row > height/2) && (row < height)                                        
     row += 1
-    puts (" " * sp)+("*" * ast)+(" " * sp)
-    sp += 1
-    ast -=2
+    puts (" " * spaces)+("*" * asteriks)+(" " * spaces)
+    spaces += 1
+    asteriks -=2
 end
 
 
@@ -76,31 +76,31 @@ while height%2 == 0 || height > 25
 end
 
 puts "Enter how many diamonds to chain together."
-dia = gets.chomp.to_i
+diamonds = gets.chomp.to_i
 
 chain = 0
-while chain < dia                                                               #loops to repeat diamonds in order to make a chain
+while chain < diamonds                                                          #number of diamonds - loops to repeat in order to make a chain
     chain += 1
-    sp = (height-1)/2                                                           #spaces variable            
-    ast = 1                                                                     #asteriks variable
-    row = 0                                                                     #row count
+    spaces = (height-1)/2                                                                 
+    asteriks = 1                                                                
+    row = 0                                                                     
     if (height%2 != 0) && (height<=23)
-        while row <= height/2                                                   #top half of the diamond
+        while row <= height/2                                                   
             row += 1
-            puts (" " * sp)+("*" * ast)+(" " * sp)
-            sp -= 1
-            ast +=2
+            puts (" " * spaces)+("*" * asteriks)+(" " * spaces)
+            spaces -= 1
+            asteriks +=2
         end
     else                                
     end
     
-    ast -= 4
-    sp = 1
-    while (row > height/2) && (row < height)                                    #bottom half of the diamond
+    asteriks -= 4
+    spaces = 1
+    while (row > height/2) && (row < height)                                    
         row += 1
-        puts (" " * sp)+("*" * ast)+(" " * sp)
-        sp += 1
-        ast -=2
+        puts (" " * spaces)+("*" * asteriks)+(" " * spaces)
+        spaces += 1
+        asteriks -=2
     end
 end
 
@@ -110,7 +110,7 @@ puts "...........Part IV: Side-by-Side..........."
 
 puts "Enter the height of the diamond."
 height = gets.chomp.to_i
-#if height%2 == 0
+
 while height%2 == 0 || height > 25
     if height > 25
         puts "Invalid response. That'll be a giant diamond. Think smaller."
@@ -126,27 +126,27 @@ end
 puts "How many diamonds to place side-by-side?"
 side = gets.chomp.to_i
 
-sp = (height-1)/2                                                               #spaces variable            
-ast = 1                                                                         #asteriks variable
-row = 0                                                                         #row count
-color = "red".to_sym
-if (height<=23)                                                                 #top half of the diamond
+spaces = (height-1)/2                                                                       
+asteriks = 1                                                                    
+row = 0                                                                         
+
+if (height<=23)                                                                 
     while row <= height/2
         row += 1
-        puts ((" " * sp)+("*" * ast)+(" " * sp)+(" ")) * side                   #places diamonds side-by-side
-        sp -= 1
-        ast +=2
+        puts ((" " * spaces)+("*" * asteriks)+(" " * spaces)+(" ")) * side      
+        spaces -= 1
+        asteriks +=2
     end
 else                                
 end
 
-ast -= 4
-sp = 1
-while (row > height/2) && (row < height)                                        #bottom half of the diamond
+asteriks -= 4
+spaces = 1
+while (row > height/2) && (row < height)                                        
     row += 1
-    puts ((" " * sp)+("*" * ast)+(" " * sp)+(" ")) * side
-    sp += 1
-    ast -=2
+    puts ((" " * spaces)+("*" * asteriks)+(" " * spaces)+(" ")) * side
+    spaces += 1
+    asteriks -=2
 end
 
 puts "............................................"
